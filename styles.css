@@ -24,7 +24,12 @@ header {
 	flex-wrap: wrap;
 	padding: 20px 15px 10px 15px;
 }
-.container a {
+.social-icons a {
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+}
+.container nav a {
 	display: inline-block;
 	padding: 10px 15px;
 	text-decoration: none;
