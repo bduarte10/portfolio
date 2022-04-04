@@ -3,12 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Inter, Helvetica, Arial, sans-serif;
-	scroll-behavior: smooth;
 }
 
 body {
-	width: 100vw;
-	height: 100vh;
 	background-color: #1e1d2a;
 }
 header {
