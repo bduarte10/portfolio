@@ -230,6 +230,7 @@ main {
 		color: white;
 		font-size: 20px;
 		padding-right: 40px;
+		transition: transform 0.3s ease-in;
 	}
 	.menu-toggle {
 		position: absolute;
@@ -239,7 +240,6 @@ main {
 		height: 100vh;
 		background: #292136;
 		transform: translate(100%);
-		transition: transform 0.3s ease-in;
 	}
 
 	.container nav ul {
@@ -284,5 +284,8 @@ main {
 	}
 	.profile-image {
 		padding-bottom: 80px;
+	}
+	.btn__cv {
+		margin-right: 0px;
 	}
 }
