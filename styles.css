@@ -9,18 +9,20 @@ body {
 	background-color: #1e1d2a;
 }
 header {
+	position: fixed;
+	width: 100%;
 	background-color: #1c1b27;
 }
 
 .container {
 	max-width: 1200px;
-	margin: 0 auto 40px auto;
+	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
 	flex-wrap: wrap;
-	padding: 20px 15px 10px 15px;
+	padding: 15px;
 }
 .grow {
 	transition: all 0.2s ease-in-out;
@@ -81,7 +83,7 @@ header {
 	grid-template-columns: 1fr 1fr;
 	margin: auto;
 	align-items: center;
-	padding-top: 20px;
+	padding-top: 140px;
 }
 
 .before__name {
