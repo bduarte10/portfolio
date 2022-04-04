@@ -1,6 +1,5 @@
 let menu = document.getElementById('menu-hamburguer');
 let toggle = document.querySelector('.menu-toggle');
-console.log(menu);
 
 menu.addEventListener('click', () => {
 	menu.classList.toggle('fa-xmark');
