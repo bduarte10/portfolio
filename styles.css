@@ -11,7 +11,7 @@ body {
 	background-color: #1e1d2a;
 }
 header {
-	background-color: rgb(39, 36, 51);
+	background-color: #1c1b27;
 }
 
 .container {
@@ -24,11 +24,22 @@ header {
 	flex-wrap: wrap;
 	padding: 20px 15px 10px 15px;
 }
+.grow {
+	transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.2);
+}
+
 .social-icons a {
 	font-size: 20px;
 	color: rgb(255, 255, 255);
 	padding: 5px;
 }
+.social-icons a:hover {
+	color: #b169fe;
+}
+
 .container nav a {
 	display: inline-block;
 	padding: 10px 15px;
@@ -66,9 +77,9 @@ header {
 	font-weight: bold;
 	font-size: 1.3rem;
 }
-.sobre {
+.banner {
 	max-width: 1200px;
-	height: 70vh;
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin: auto;
@@ -83,7 +94,7 @@ header {
 	padding: 5px 15px;
 	margin-bottom: 40px;
 	color: white;
-	border-radius: 5px 20px;
+	border-radius: 0px 20px;
 }
 .after__name {
 	display: block;
@@ -144,6 +155,45 @@ header {
 }
 .btn-gradient-border:hover {
 	background-image: linear-gradient(#9234eb, #56198f);
+}
+main {
+	padding-top: 100px;
+	background: #232231;
+}
+#sobre {
+	height: 500px;
+}
+#sobre h1 {
+	font-size: 25px;
+	background-color: #9234eb;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-bottom: 40px;
+	color: white;
+	border-radius: 0px 20px;
+}
+
+.container__sobre {
+	max-width: 1200px;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto;
+	align-items: center;
+}
+.profile-image {
+	display: flex;
+	justify-content: center;
+	width: 500px;
+}
+.profile-image img {
+	box-shadow: -25px 25px #9234eb;
+}
+.sobre__text {
+	width: 600px;
+
+	color: white;
 }
 
 @media (max-width: 815px) {
