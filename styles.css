@@ -292,4 +292,10 @@ main {
 	.btn__cv {
 		margin-right: 0px;
 	}
+	.btn {
+		margin-top: 20px;
+	}
+	.after__name {
+		padding-bottom: 25px;
+	}
 }
