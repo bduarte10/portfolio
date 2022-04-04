@@ -287,6 +287,8 @@ main {
 	.profile-image {
 		padding-bottom: 80px;
 	}
+}
+@media (max-width: 460px) {
 	.btn__cv {
 		margin-right: 0px;
 	}
