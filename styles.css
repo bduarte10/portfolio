@@ -163,7 +163,7 @@ main {
 #sobre {
 	height: 500px;
 }
-#sobre h1 {
+.sobre__text h1 {
 	font-size: 25px;
 	background-color: #9234eb;
 	display: inline-block;
@@ -281,7 +281,9 @@ main {
 	}
 	.sobre__text {
 		padding: 0px 40px;
+		text-align: center;
 	}
+
 	.profile-image {
 		padding-bottom: 80px;
 	}
