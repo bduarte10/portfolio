@@ -48,7 +48,9 @@ header {
 	transform: scale(1.2);
 	color: #b169fe;
 }
-
+.social-icons {
+	cursor: pointer;
+}
 .social-icons a {
 	font-size: 20px;
 	color: rgb(255, 255, 255);
@@ -207,6 +209,7 @@ header {
 	padding-bottom: 100px;
 }
 .profile-image img {
+	border-radius: 15px;
 	box-shadow: -25px 25px #9234eb;
 }
 .sobre__text {
