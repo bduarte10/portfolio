@@ -196,6 +196,7 @@ header {
 .sobre__text p {
   line-height: 1.5;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 .sobre__text h1 {
   font-size: 25px;
