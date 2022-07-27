@@ -235,6 +235,7 @@ header {
 }
 
 #projetos {
+  padding: 0px 15px 0px 15px;
   background-color: #1e1d2a;
 }
 .container__projetos {
@@ -313,9 +314,16 @@ header {
 
 /* responsivo  */
 
-@media (max-width: 815px) {
+@media (max-width: 905px) {
   body {
     overflow-x: hidden;
+  }
+  .grid__projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
   .mobile-icons {
     display: block;
@@ -397,6 +405,9 @@ header {
   .profile-image img {
     width: 250px;
   }
+  .container__sobre {
+    flex-direction: column;
+  }
 }
 @media (max-width: 760px) {
   .apresentacao__imagem {
@@ -422,6 +433,9 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr);
     justify-content: center;
+  }
+  .container__sobre {
+    flex-direction: row;
   }
 }
 @media (max-width: 460px) {
