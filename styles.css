@@ -418,9 +418,9 @@ footer {
     color: white;
     font-size: 20px;
     cursor: pointer;
-    /* padding-right: 40px; */
   }
   .menu-toggle {
+    z-index: 9999;
     position: absolute;
     top: 55px;
     right: 0px;
