@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script
       src="https://kit.fontawesome.com/020cf67d8c.js"
       crossorigin="anonymous"
@@ -21,14 +23,14 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo text-gradient"><a href="#">Duarte Dev </a></div>
+        <div class="logo text-gradient"><a href="#">Duarte Dev</a></div>
         <div id="menu-hamburguer" class="fa-solid fa-bars"></div>
 
         <nav class="menu-toggle" aria-label="primaria">
           <ul>
             <li><a href="#sobre">Sobre mim</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contatos">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
           <div class="mobile-icons">
             <a href="https://github.com/bduarte10" target="_blank">
@@ -66,17 +68,22 @@
         <span class="before__name">Olá, meu nome é</span>
         <h1>Bruno Duarte</h1>
         <span class="after__name">Front-end Developer</span>
-        <a href="./assets/BrunoDuarteCurriculo.pdf" download
+        <a
+          href="https://github.com/bduarte10/Curriculo/raw/main/Curr%C3%ADculo%20-%20Bruno%20Duarte.pdf"
+          download
           ><button class="btn btn-gradient-border btn__cv">
             Download CV
           </button></a
         >
       </div>
       <div class="apresentacao__imagem">
-        <img
-          src="./assets/Programming-amico.svg"
-          alt="ilustração de programação"
-        />
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_ia3vkqsj.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </section>
     <main>
@@ -162,12 +169,12 @@
                 <h2>Pokedéx</h2>
                 <p>
                   Projeto criado utilizando React e consumindo uma API pública
-                  para mostrar a listagem de Pokemóns
+                  para mostrar a listagem de Pokemóns.
                 </p>
               </a>
             </div>
             <div class="box__projeto">
-              <a href="https://github.com/bduarte10/Pokedex-ReactJs">
+              <a href="https://github.com/bduarte10/dtmoney">
                 <img
                   src="./assets/dtmoney.jpeg"
                   alt=""
@@ -176,13 +183,13 @@
                 />
                 <h2>Dtmoney</h2>
                 <p>
-                  Projeto criado utilizando React e consumindo uma API pública
-                  para mostrar a listagem de Pokemóns
+                  Aplicação para gestão financeira pessoal, feita em React e
+                  Styled-Components.
                 </p>
               </a>
             </div>
             <div class="box__projeto">
-              <a href="https://github.com/bduarte10/Pokedex-ReactJs">
+              <a href="https://github.com/bduarte10/event-platform">
                 <img
                   src="./assets/evento.jpeg"
                   alt=""
@@ -191,23 +198,23 @@
                 />
                 <h2>Plataforma de evento</h2>
                 <p>
-                  Projeto criado utilizando React e consumindo uma API pública
-                  para mostrar a listagem de Pokemóns
+                  Feita com React e TailwindCSS, contém página de inscrição para
+                  acesso ao conteúdo em vídeos e lives.
                 </p>
               </a>
             </div>
             <div class="box__projeto">
-              <a href="https://github.com/bduarte10/Pokedex-ReactJs">
+              <a href="https://github.com/bduarte10/ignite-feed">
                 <img src="./assets/feed.jpeg" alt="" height="200" width="350" />
                 <h2>Feed de rede social</h2>
                 <p>
-                  Projeto criado utilizando React e consumindo uma API pública
-                  para mostrar a listagem de Pokemóns
+                  Projeto criado utilizando React, Vite e css modules, simula um
+                  feed de rede social.
                 </p>
               </a>
             </div>
             <div class="box__projeto">
-              <a href="https://github.com/bduarte10/Pokedex-ReactJs">
+              <a href="https://github.com/bduarte10/Bankist">
                 <img
                   src="./assets/bankist.jpeg"
                   alt=""
@@ -215,14 +222,11 @@
                   width="350"
                 />
                 <h2>Banco digital fictício</h2>
-                <p>
-                  Projeto criado utilizando React e consumindo uma API pública
-                  para mostrar a listagem de Pokemóns
-                </p>
+                <p>Banco digital fictício criado com HTML, CSS e Javascript</p>
               </a>
             </div>
             <div class="box__projeto">
-              <a href="https://github.com/bduarte10/Pokedex-ReactJs">
+              <a href="https://github.com/bduarte10/feedback-widget">
                 <img
                   src="./assets/widget.jpeg"
                   alt=""
@@ -231,16 +235,50 @@
                 />
                 <h2>FeedBack Widget</h2>
                 <p>
-                  Projeto criado utilizando React e consumindo uma API pública
-                  para mostrar a listagem de Pokemóns
+                  Widget criado com React, Prisma, TailwindCSS, permite que as
+                  pessoas enviem feedback ou sugestões.
                 </p>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section id="contato"></section>
+      <section id="contato">
+        <h1>Entre em contato</h1>
+        <div class="form">
+          <img src="./assets/Programming-amico.svg" alt="" />
+          <form
+            action="https://formsubmit.co/duartebruno2208@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Mensagem do Site!" />
+            <input type="hidden" name="_template" value="box" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="text"
+              name="name"
+              class="inputs"
+              placeholder="Seu nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="inputs"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="inputs textarea"
+              name="message"
+              placeholder="Escreva sua mensagem"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer>Feito com muito ♥ por Bruno Duarte</footer>
   </body>
 </html>
