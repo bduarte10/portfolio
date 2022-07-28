@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -22,7 +23,11 @@
     <title>Bruno Duarte</title>
   </head>
   <body>
-    <header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <header data-aos="fade-down" data-aos-delay="300">
       <div class="container">
         <div class="logo text-gradient"><a href="#">Duarte Dev</a></div>
         <div id="menu-hamburguer" class="fa-solid fa-bars"></div>
@@ -65,19 +70,34 @@
       </div>
     </header>
     <section class="banner">
-      <div class="apresentacao">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="350"
+        data-aos-duration="1500"
+        class="apresentacao"
+      >
         <span class="before__name">Olá, meu nome é</span>
         <h1>Bruno Duarte</h1>
         <span class="after__name">Front-end Developer</span>
         <a
           href="https://github.com/bduarte10/Curriculo/raw/main/Curr%C3%ADculo%20-%20Bruno%20Duarte.pdf"
           download
-          ><button class="btn btn-gradient-border btn__cv">
+          ><button
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            class="btn btn-gradient-border btn__cv"
+          >
             Download CV
           </button></a
         >
       </div>
-      <div class="apresentacao__imagem">
+      <div
+        data-aos-delay="500"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="apresentacao__imagem"
+      >
         <lottie-player
           src="https://assets4.lottiefiles.com/packages/lf20_ia3vkqsj.json"
           background="transparent"
@@ -95,14 +115,29 @@
         <div class="container__sobre">
           <div class="profile-image">
             <img
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="500"
               src="./assets/profile-pic.jpg"
               alt="foto de perfil"
               width="350"
             />
           </div>
           <div class="sobre__text">
-            <h1>Sobre mim</h1>
-            <p>
+            <h1
+              data-aos="fade-down"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+            >
+              Sobre mim
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+            >
               Venho me dedicando a área de tecnologia há aproximadamente 2 anos,
               quando iniciei meus estudos de programação com Java, e no início
               de 2021, iniciei o curso de Análise e desenvolvimento de sistemas
@@ -157,9 +192,22 @@
       </section>
       <section id="projetos">
         <div class="container__projetos">
-          <h1>Projetos</h1>
+          <h1
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+          >
+            Projetos
+          </h1>
           <div class="grid__projetos">
-            <div class="box__projeto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              class="box__projeto"
+            >
               <a href="https://github.com/bduarte10/Pokedex-ReactJs">
                 <img
                   src="./assets/pokedex.jpeg"
@@ -174,7 +222,13 @@
                 </p>
               </a>
             </div>
-            <div class="box__projeto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              class="box__projeto"
+            >
               <a href="https://github.com/bduarte10/dtmoney">
                 <img
                   src="./assets/dtmoney.jpeg"
@@ -189,7 +243,13 @@
                 </p>
               </a>
             </div>
-            <div class="box__projeto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              class="box__projeto"
+            >
               <a href="https://github.com/bduarte10/event-platform">
                 <img
                   src="./assets/evento.jpeg"
@@ -204,7 +264,13 @@
                 </p>
               </a>
             </div>
-            <div class="box__projeto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              class="box__projeto"
+            >
               <a href="https://github.com/bduarte10/ignite-feed">
                 <img src="./assets/feed.jpeg" alt="" height="200" width="350" />
                 <h2>Feed de rede social</h2>
@@ -214,7 +280,13 @@
                 </p>
               </a>
             </div>
-            <div class="box__projeto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              class="box__projeto"
+            >
               <a href="https://github.com/bduarte10/Bankist">
                 <img
                   src="./assets/bankist.jpeg"
@@ -226,7 +298,13 @@
                 <p>Banco digital fictício criado com HTML, CSS e Javascript</p>
               </a>
             </div>
-            <div class="box__projeto">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              class="box__projeto"
+            >
               <a href="https://github.com/bduarte10/feedback-widget">
                 <img
                   src="./assets/widget.jpeg"
@@ -245,10 +323,28 @@
         </div>
       </section>
       <section id="contato">
-        <h1>Entre em contato</h1>
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+        >
+          Entre em contato
+        </h1>
         <div class="form">
-          <img src="./assets/Programming-amico.svg" alt="" />
+          <img
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+            src="./assets/Programming-amico.svg"
+            alt=""
+          />
           <form
+            data-aos="fade-left"
+            data-aos-delay="700"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
             action="https://formsubmit.co/duartebruno2208@gmail.com"
             method="POST"
           >
@@ -280,6 +376,6 @@
       </section>
     </main>
 
-    <footer>Feito com muito ♥ por Bruno Duarte</footer>
+    <footer>Feito com ♥ por Bruno Duarte</footer>
   </body>
 </html>
