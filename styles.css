@@ -562,3 +562,16 @@ footer {
     margin-top: -55px;
   }
 }
+
+.heart::before {
+    content: "❤️";
+}
+
+.heart:hover::before {
+    content: "🤍";
+}
+
+footer a {
+    font-weight: 700;
+    cursor: alias;
+}
