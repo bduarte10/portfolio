@@ -18,8 +18,8 @@ function reachedTheLimit(minHeight = null) {
 	return false
 }
 
-function srinkMenu(toTop = true) {
-	toTop = (typeof toTop != "boolean") ? true : toTop;
+function shrinkMenu(outOfTop = true) {
+	outOfTop = (typeof outOfTop != "boolean") ? true : outOfTop;
 
 	let menuContainer = document.querySelector('header > div.container');
 
@@ -27,18 +27,22 @@ function srinkMenu(toTop = true) {
 		return
 	}
 
-	if (toTop) {
-		menuContainer.classList.remove('p-0')
+	if (outOfTop) {
+		menuContainer.classList.add('p-0')
 		return
 	}
 
-	menuContainer.classList.add('p-0')
+	menuContainer.classList.remove('p-0')
+}
+
+function shrinkValidate(percentage = 30) {
+	let screenBased = (window.screen.height / 100) * percentage;
+	shrinkMenu(reachedTheLimit(screenBased))
 }
 
 window.onscroll = () => {
 	menu.classList.remove('fa-xmark');
 	toggle.classList.remove('active');
 
-	let screenBased = (window.screen.height / 100) * 30;
-	srinkMenu(reachedTheLimit(screenBased))
+	shrinkValidate()
 };
