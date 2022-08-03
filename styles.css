@@ -628,3 +628,10 @@ footer a {
   cursor: pointer;
   border: 2px double transparent !important;
 }
+
+#sobre .sobre__text img:hover {
+  width: 70px;
+  overflow: initial;
+  padding-left: 5px;
+  padding-right: 0;
+}
