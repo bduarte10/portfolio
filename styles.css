@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Inter, Helvetica, Arial, sans-serif;
+  transition: all 0.5s ease;
+}
+
+body, html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,14 +20,16 @@ a {
 }
 .btn {
   cursor: pointer;
-  width: 200px;
   background-color: #ffffff00;
   color: white;
   border-radius: 5px;
   display: inline-block;
-  padding: 12px;
-  margin-top: 40px;
 }
+
+.p-12px{ padding: 12px;}
+.w-200px{ width: 200px;}
+.mt-40px{ margin-top: 40px;}
+
 main {
   background: #232231;
 }
@@ -66,29 +73,41 @@ header {
 
 .menu-toggle ul li a {
   display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #fff;
+  background-color: transparent;
+  border: none;
   border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0.9;
 }
+
+.menu-toggle ul li a:hover, .menu-toggle ul li a.active {
+
+  background: #3e8e41;
+  background: #56198f;
+  /* background: linear-gradient(#9234eb, #56198f); */
+  color: white;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
 #menu-hamburguer {
   display: none;
 }
+
 .menu-toggle.active {
+  transition: all 0.5s !important;
   transform: translate(0);
 }
+
 .mobile-icons {
   display: none;
   font-size: 20px;
   color: rgb(255, 255, 255);
   padding: 5px;
   text-align: center;
-}
-
-.menu-toggle ul li a:hover {
-  background: linear-gradient(#9234eb, #56198f);
-  color: rgb(255, 255, 255);
-  cursor: pointer;
 }
 
 .container nav ul {
@@ -364,6 +383,7 @@ form {
   padding: 60px 40px;
   border-radius: 15px;
 }
+
 form button {
   border-radius: 15px;
   padding: 10px;
@@ -419,6 +439,7 @@ footer {
     font-size: 20px;
     cursor: pointer;
   }
+
   .menu-toggle {
     z-index: 9999;
     position: absolute;
@@ -569,9 +590,41 @@ footer {
 
 .heart:hover::before {
     content: "🤍";
+    font-size: larger;
+    color: red;
 }
 
 footer a {
     font-weight: 700;
     cursor: alias;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.bg-primary {
+  background: #5512ad;
+  background-image: linear-gradient(#343060, #1e1d2a), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.bg-primary:hover {
+  background: #5512ad !important;
+  background-image: none;
+  background-image: linear-gradient(#343060, #913898), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192)) !important;
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+  color: #d5cfdd !important;
+}
+
+.rounded-button {
+  margin: 0;
+  border-radius: 15px !important;
+  padding: 10px !important;
+  color: white !important;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px double transparent !important;
 }
