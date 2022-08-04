@@ -27,7 +27,7 @@ function shrinkMenu(outOfTop = true) {
 		return
 	}
 
-	if (outOfTop) {
+	if (window.screen.width >= 900 && outOfTop) {
 		menuContainer.classList.add('p-0')
 		return
 	}
