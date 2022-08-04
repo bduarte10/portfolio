@@ -51,6 +51,7 @@ header {
 }
 
 .container {
+  transition: padding 0.5s;
   max-width: 1200px;
   margin: auto;
   display: flex;
