@@ -1,5 +1,5 @@
 let menu = document.getElementById('menu-hamburguer');
-console.log(menu);
+
 let toggle = document.querySelector('.menu-toggle');
 
 menu.addEventListener('click', () => {
