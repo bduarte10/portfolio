@@ -678,12 +678,12 @@ footer a {
   color: #fff;
   background: #25d366;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .whatsapp:hover {
   outline: 2px solid #fff;
 }
 .whatsapp i {
-  font-size: 30px;
+  font-size: 35px;
 }
