@@ -22,8 +22,10 @@ a {
   cursor: pointer;
   background-color: #ffffff00;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   display: inline-block;
+  font-weight: bold;
+  font-size: 1.025rem;
 }
 
 .p-12px {
@@ -374,9 +376,10 @@ header {
   border-radius: 15px;
   padding: 15px;
   width: 500px;
-  margin: 8px 0;
+  margin: 10px 0;
   outline: none;
   border: none;
+  font-weight: bold;
 }
 .inputs:focus {
   outline: 3px solid #33f9f9;
@@ -394,8 +397,8 @@ form {
 
 form button {
   border-radius: 15px;
-  padding: 10px;
-  margin: 5px 0;
+  padding: 15px;
+  margin: 10px 0;
   background: #5512ad;
   color: white;
   font-weight: bold;
@@ -640,7 +643,7 @@ footer a {
 
 .rounded-button {
   margin: 0;
-  border-radius: 15px !important;
+  border-radius: 8px !important;
   padding: 10px !important;
   color: white !important;
   font-weight: bold;
