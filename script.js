@@ -46,3 +46,16 @@ window.onscroll = () => {
 
 	shrinkValidate()
 };
+
+window.onload = function() {
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			emailjs.sendForm('duarteDev', 'template_j80im88', this)
+					.then(function() {
+							alert('Mensagem enviada com sucesso!');
+					}, function(error) {
+							alert('Ocorreu um erro. Tente novamente...', error);
+					});
+					this.reset();
+	});
+}

@@ -19,6 +19,15 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('7Qg8SRiKabfrSrz5I')
+      })()
+    </script>
 
     <title>Bruno Duarte</title>
   </head>
@@ -284,17 +293,13 @@
         <h1 data-aos="fade-right">Entre em contato</h1>
         <div class="form">
           <img data-aos="fade-up" src="./assets/Programming-amico.svg" alt="" />
-          <form
-            data-aos="fade-up"
-            action="https://formsubmit.co/duartebruno2208@gmail.com"
-            method="POST"
-          >
+          <form data-aos="fade-up" id="contact-form">
             <input type="hidden" name="_subject" value="Mensagem do Site!" />
             <input type="hidden" name="_template" value="box" />
 
             <input
               type="text"
-              name="name"
+              name="from_name"
               class="inputs"
               placeholder="Seu nome"
               required
