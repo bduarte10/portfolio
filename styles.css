@@ -545,9 +545,9 @@ footer {
     padding: 0px;
   }
   .banner {
-    margin-bottom: 90px;
+   
     padding-top: 50px;
-    height: calc(100vh - 80px);
+    height: 100vh;
   }
   .apresentacao {
     order: 1;
